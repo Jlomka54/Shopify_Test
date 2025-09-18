@@ -1,0 +1,24 @@
+{
+  "name": "shopify_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jlomka54/Shopify_Test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jlomka54/Shopify_Test/issues"
+  },
+  "homepage": "https://github.com/Jlomka54/Shopify_Test#readme",
+  "devDependencies": {
+    "@shopify/cli": "^3.84.1",
+    "@shopify/theme": "^3.58.2"
+  }
+}
