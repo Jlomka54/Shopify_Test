@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "dev": "shopify theme dev --store=red-hot-team-task.myshopify.com",
+  "push": "shopify theme push --store=red-hot-team-task.myshopify.com",
+  "pull": "shopify theme pull --store=red-hot-team-task.myshopify.com"
+}
+,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jlomka54/Shopify_Test.git"
