@@ -5,10 +5,27 @@
   https://shopify.dev/docs/storefronts/themes/architecture/templates/product
 {% endcomment %}
 
-<div class="product-images">
-  {% for image in product.images %}
-    {% render 'image', class: 'product-image', image: image %}
-  {% endfor %}
+<div class="product-swiper-container">
+  <div class="swiper myProductSwiper">
+    <div class="swiper-wrapper">
+      {% for image in product.images %}
+        <div class="swiper-slide">
+          <img width="auto" height="auto"
+            src="{{ image | image_url: '2048x' }}"
+            alt="{{ image.alt | escape }}"
+            loading="lazy"
+            style="width:100%;height:auto;display:block;object-fit:cover;"
+            data-image-id="{{ image.id }}"
+          />
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <div class="swiper-pagination"></div>
+  </div>
 </div>
 
 <div class="product-info">
